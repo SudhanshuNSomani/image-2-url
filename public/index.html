@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image URL Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Image URL Generator</h1>
+    <form
+      id="upload-form"
+      enctype="multipart/form-data"
+      method="post"
+      action="/upload"
+    >
+      <input type="file" name="image" accept="image/*" required />
+      <button type="submit">Upload</button>
+    </form>
+    <div id="result"></div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
